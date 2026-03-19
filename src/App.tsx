@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion'
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { AppShell } from './components/ui/AppShell'
 import { FeaturePage } from './pages/FeaturePage'
 import { HomePage } from './pages/HomePage'
@@ -22,11 +22,11 @@ function AnimatedRoutes() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppShell>
         <AnimatedRoutes />
       </AppShell>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

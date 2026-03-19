@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 
 export function StoveHero() {
+  const stoveImageSrc = `${import.meta.env.BASE_URL}stove.jpg`
+
   return (
     <section className="mx-auto mt-8 w-full max-w-6xl sm:mt-10">
       <motion.div
@@ -26,7 +28,7 @@ export function StoveHero() {
       >
         <div className="relative mx-auto max-w-5xl">
           <img
-            src="/stove.jpg"
+            src={stoveImageSrc}
             alt="Fogão inteligente CookEye"
             className="w-full rounded-2xl object-cover"
           />
